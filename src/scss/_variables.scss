@@ -1,0 +1,26 @@
+// Media breakpoints.
+$table-media-tablet: 768px;
+$table-media-mobile: 576px;
+
+// Default table styles.
+$table-font-family: inherit;
+$table-font-size: inherit;
+
+// Table Head styles.
+$th-font-weight: bold;
+$th-bg-color: #39966c;
+$th-border-color-tb: $th-bg-color;
+$th-border-color-rl: #338761;
+$th-color: #ffffff;
+$th-padding-tb: 15px;
+$th-padding-rl: 15px;
+
+// Table Body styles.
+$td-font-weight: inherit;
+$td-odd-bg-color: #f7f7f7;
+$td-even-bg-color: transparent;
+$td-border-color-tb: transparent;
+$td-border-color-rl: #e5e5e5;
+$td-color: inherit;
+$td-padding-tb: 15px;
+$td-padding-rl: 15px;

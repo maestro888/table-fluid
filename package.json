@@ -1,0 +1,52 @@
+{
+  "name": "table-fluid",
+  "version": "1.0.0",
+  "version_short": "1.0",
+  "style": "dist/css/table-fluid.css",
+  "sass": "src/scss/table-fluid.scss",
+  "main": "src/js/table-fluid.js",
+  "homepage": "https://github.com/maestro888",
+  "author": {
+    "name": "maestro888",
+    "url": "https://github.com/maestro888/table-fluid/graphs/contributors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maestro888/table-fluid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maestro888/table-fluid/issues"
+  },
+  "contributors": [
+    {
+      "name": "maestro888"
+    }
+  ],
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "src/js/**/*.{js,map}",
+    "src/scss/**/*.scss"
+  ],
+  "description": "Responsive Tables JavaScript Plugin",
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "plugin",
+    "web"
+  ],
+  "license": "ISC"
+}
