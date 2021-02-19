@@ -1,8 +1,11 @@
 /**
- * Responsive table function tableFluid().
- * Adding data-th attributes and wrapping
- * table cell content in table.
+ * --------------------------------------------------------------------------
+ * Responsive Table (v1.0.0): table-fluid.js
+ * Copyright (c) 2021 maestro888
+ * Licensed under MIT (https://github.com/maestro888/table-fluid/LICENSE.txt)
+ * --------------------------------------------------------------------------
  */
+
 Object.prototype.tableFluid = function() {
   let _self = this;
 
