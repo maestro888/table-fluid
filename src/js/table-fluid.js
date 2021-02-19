@@ -16,7 +16,7 @@ Object.prototype.tableFluid = function() {
       item.querySelectorAll('th').forEach((item) => {
         headers.push(item.innerText);
       });
-      item.querySelectorAll('td').forEach( (item, index) => {
+      item.querySelectorAll('td').forEach((item, index) => {
         item.setAttribute('data-th', headers[index]);
         item.innerHTML = '<div class="table-cell">' + item.innerHTML + '</div>';
       });
