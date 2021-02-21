@@ -1,22 +1,17 @@
 "use strict";
 
-Object.prototype.tableFluid = function () {
-  var _self = this;
-
-  if (this.selector) {
-    _self = document.querySelectorAll(this.selector);
-  }
-
-  _self.forEach(function (item) {
+window.tableFluid = function (selector) {
+  document.querySelectorAll(selector).forEach(function (table) {
     var headers = [];
-    item.querySelectorAll('tr').forEach(function (item) {
-      item.querySelectorAll('th').forEach(function (item) {
-        headers.push(item.innerText);
+    table.querySelectorAll('tr').forEach(function (tr) {
+      tr.querySelectorAll('th').forEach(function (th) {
+        headers.push(th.innerText);
       });
-      item.querySelectorAll('td').forEach(function (item, index) {
-        item.setAttribute('data-th', headers[index]);
-        item.innerHTML = '<div class="table-cell">' + item.innerHTML + '</div>';
+      tr.querySelectorAll('td').forEach(function (td, index) {
+        td.setAttribute('data-th', headers[index]);
+        td.innerHTML = "<div class=\"table-cell\">".concat(td.innerHTML, "</div>");
       });
     });
   });
 };
+//# sourceMappingURL=table-fluid.js.map
