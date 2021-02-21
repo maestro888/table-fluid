@@ -35,11 +35,13 @@ function catchError(e) {
 function taskJs() {
   return gulp.src(path.src.js)
     .pipe(plumber(catchError))
+    .pipe(sourceMaps.init())
     .pipe(babel({
       presets: ['@babel/env'],
       'comments': false,
       'retainLines': false,
     }))
+    .pipe(sourceMaps.write(''))
     .pipe(gulp.dest(path.build.js));
 }
 
