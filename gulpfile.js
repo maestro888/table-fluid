@@ -1,4 +1,4 @@
-const gulp   = require('gulp'),
+const {src, dest, series, watch} = require('gulp'),
   plumber    = require('gulp-plumber'),
   sass       = require('gulp-sass'),
   babel      = require('gulp-babel'),
@@ -33,7 +33,7 @@ function catchError(e) {
 
 // Build js.
 function taskJs() {
-  return gulp.src(path.src.js)
+  return src(path.src.js)
     .pipe(plumber(catchError))
     .pipe(sourceMaps.init())
     .pipe(babel({
@@ -42,25 +42,25 @@ function taskJs() {
       'retainLines': false,
     }))
     .pipe(sourceMaps.write(''))
-    .pipe(gulp.dest(path.build.js));
+    .pipe(dest(path.build.js));
 }
 
 // Build css.
 function taskScss() {
-  return gulp.src(path.src.scss)
+  return src(path.src.scss)
     .pipe(plumber(catchError))
     .pipe(sourceMaps.init())
     .pipe(sass(sassOptions))
     .pipe(sourceMaps.write(''))
-    .pipe(gulp.dest(path.build.css));
+    .pipe(dest(path.build.css));
 }
 
 // Build all files.
 function taskWatch() {
-  gulp.watch(path.watch.js, taskJs);
-  gulp.watch(path.watch.scss, taskScss);
+  watch(path.watch.js, taskJs);
+  watch(path.watch.scss, taskScss);
 }
 
-exports.js      = taskJs;
-exports.scss    = taskScss;
-exports.default = taskWatch;
+exports.js      = series(taskJs);
+exports.scss    = series(taskScss);
+exports.default = series(taskWatch);
