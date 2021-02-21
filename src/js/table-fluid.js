@@ -6,22 +6,16 @@
  * --------------------------------------------------------------------------
  */
 
-Object.prototype.tableFluid = function() {
-  let _self = this;
-
-  if (this.selector) {
-    _self = document.querySelectorAll(this.selector);
-  }
-
-  _self.forEach((item) => {
+window.tableFluid = (selector) => {
+  document.querySelectorAll(selector).forEach((table) => {
     let headers = [];
-    item.querySelectorAll('tr').forEach((item) => {
-      item.querySelectorAll('th').forEach((item) => {
-        headers.push(item.innerText);
+    table.querySelectorAll('tr').forEach((tr) => {
+      tr.querySelectorAll('th').forEach((th) => {
+        headers.push(th.innerText);
       });
-      item.querySelectorAll('td').forEach((item, index) => {
-        item.setAttribute('data-th', headers[index]);
-        item.innerHTML = '<div class="table-cell">' + item.innerHTML + '</div>';
+      tr.querySelectorAll('td').forEach((td, index) => {
+        td.setAttribute('data-th', headers[index]);
+        td.innerHTML = `<div class="table-cell">${td.innerHTML}</div>`;
       });
     });
   });
