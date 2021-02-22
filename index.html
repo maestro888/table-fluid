@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Responsive Table Example</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,17 +12,17 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="src/lib/reset.css">
+  <link rel="stylesheet" href="dist/css/table-fluid.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <div class="container">
+  <div class="container" style="padding: 15px">
 
     <!-- Example -->
+    <!-- Please add this <link rel="stylesheet" href="dist/css/table-fluid.css"> in to the head -->
     <table class="table-fluid">
       <thead>
       <tr>
@@ -36,62 +36,46 @@
       <tbody>
       <tr>
         <td>1</td>
-        <td>Test Organization 1</td>
+        <td>Tesla Inc.</td>
         <td>
-          <a href="https://google.com" target="_blank">28761</a>
+          <a href="https://tesla.com" target="_blank">15684</a>
         </td>
         <td>
-          <a href="https://google.com" target="_blank">test.com</a>
+          <a href="https://tesla.com" target="_blank">tesla.com</a>
         </td>
-        <td>
-          20G
-        </td>
+        <td>20G</td>
       </tr>
       <tr>
+        <td>2</td>
+        <td>Amazon.com Inc.</td>
         <td>
-          2
-        </td>
-        <td>Test Organization Microsoft</td>
-        <td>
-          <a href="https://google.com" target="_blank">44387</a>
+          <a href="https://amazon.com" target="_blank">56823</a>
         </td>
         <td>
-          <a href="https://google.com" target="_blank">new.com</a>
+          <a href="https://amazon.com" target="_blank">amazon.com</a>
         </td>
-        <td>
-          1G
-        </td>
+        <td>1G</td>
       </tr>
       <tr>
+        <td>3</td>
+        <td>Microsoft Corporation</td>
+        <td>456678</td>
         <td>
-          3
+          <a href="https://microsoft.com" target="_blank">microsoft.com</a>
         </td>
-        <td>
-          BetaPlace
-        </td>
-        <td>
-          <a href="https://google.com" target="_blank">8654</a>
-        </td>
-        <td>
-          <a href="https://google.com" target="_blank">test.com</a>
-        </td>
-        <td>
-          1G
-        </td>
+        <td>1G</td>
       </tr>
       </tbody>
     </table>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Please add this scripts bottom to the body -->
     <script src="dist/js/table-fluid.js"></script>
     <script>
-      (function ($) {
-        $('.table-fluid').tableFluid();
-      })(jQuery);
+      window.tableFluid('.table-fluid');
     </script>
     <!-- END Example -->
 
   </div>
-
 </body>
 
 </html>
