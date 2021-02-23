@@ -8,6 +8,8 @@ package-lock.json
 index.html
 lib
 
+.env
+
 *.7z
 *.dmg
 *.gz
