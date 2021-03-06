@@ -15,7 +15,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.2.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.3.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
@@ -24,6 +24,10 @@ Several quick start options are available:
 ```html
 <link rel="stylesheet" href=".../dist/css/table-fluid.css">
 <script src=".../dist/js/table-fluid.js"></script>
+
+<table class="table-fluid">
+...
+</table>
 ```
 
 <p>Use JavaScript function</p>
@@ -66,6 +70,10 @@ window.tableFluid('.table-fluid');
 ```html
 <link rel="stylesheet" href=".../css/table-fluid/table-fluid.css">
 <script src=".../js/table-fluid/table-fluid.js"></script>
+
+<table class="table-fluid">
+...
+</table>
 ```
 
 <p>Use JavaScript function</p>
