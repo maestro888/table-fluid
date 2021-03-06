@@ -15,7 +15,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.3.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.4.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
@@ -26,7 +26,12 @@ Several quick start options are available:
 <script src=".../dist/js/table-fluid.js"></script>
 
 <table class="table-fluid">
-...
+  <thead>
+  ...
+  </thead>
+  <tbody>
+  ...
+  </tbody>
 </table>
 ```
 
@@ -42,7 +47,7 @@ window.tableFluid('.table-fluid');
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 - Create a folder `table-fluid` inside you `js` project directory
 - In the project directory `table-fluid` create file `table-fluid.js`
-- In the file `table-fluid.js` add code:
+- In the created file `table-fluid.js` add code:
 
 ```js
 // Import js from table-fluid
@@ -51,7 +56,7 @@ window.tableFluid('.table-fluid');
 
 - Create a folder `table-fluid` inside you `scss` project directory
 - In the project directory `table-fluid` create two files `table-fluid.scss`, `_variables.scss`
-- In the file `table-fluid.scss` add:
+- In the created file `table-fluid.scss` add:
 
 ```scss
 @import 'variables';
@@ -72,7 +77,12 @@ window.tableFluid('.table-fluid');
 <script src=".../js/table-fluid/table-fluid.js"></script>
 
 <table class="table-fluid">
-...
+  <thead>
+  ...
+  </thead>
+  <tbody>
+  ...
+  </tbody>
 </table>
 ```
 
