@@ -23,6 +23,14 @@
         border-color: $th-border-color-tb $th-border-color-rl;
         padding: $th-padding-tb $th-padding-rl;
         color: $th-color;
+
+        &:first-child {
+          border-left-color: $th-border-color-tb;
+        }
+
+        &:last-child {
+          border-right-color: $th-border-color-tb;
+        }
       }
 
       > td {
@@ -59,11 +67,55 @@
 
     > * {
       > tr {
+        &:nth-child(odd) {
+          > td {
+            background-color: transparent;
+
+            &:before {
+              border-color: $th-border-color-rl $th-border-color-tb;
+              background-color: $th-bg-color;
+            }
+
+            > .table-cell {
+              background-color: $td-odd-bg-color;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          > td {
+            &:before {
+              border-color: lighten($th-border-color-rl, 3%) lighten($th-border-color-tb, 3%);
+              background-color: lighten($th-bg-color, 3%);
+            }
+          }
+        }
+
         > td {
           display: table;
           width: 100%;
           border: 0 none;
           padding: 0;
+
+          &:first-child {
+            &:before {
+              border-top-color: $th-border-color-tb;
+            }
+
+            > .table-cell {
+              border-top-color: $td-border-color-rl;
+            }
+          }
+
+          &:last-child {
+            &:before {
+              border-bottom-color: $th-border-color-tb;
+            }
+
+            > .table-cell {
+              border-bottom-color: $td-border-color-rl;
+            }
+          }
 
           &:before,
           > .table-cell {
@@ -82,38 +134,13 @@
           }
 
           > .table-cell {
-            border-color: $td-border-color-rl $td-border-color-tb;
+            border-color: $td-border-color-tb $td-border-color-rl;
             text-align: center;
-          }
-        }
-
-        &:nth-child(odd) {
-          > td {
-            background-color: transparent;
-
-            &:before {
-              border-color: lighten($th-border-color-rl, 3%) lighten($th-border-color-tb, 3%);
-              background-color: lighten($th-bg-color, 3%);
-            }
-
-            > .table-cell {
-              background-color: $td-odd-bg-color;
-            }
-          }
-        }
-
-        &:nth-child(even) {
-          > td {
-            &:before {
-              border-color: $th-border-color-rl $th-border-color-tb;
-              background-color: $th-bg-color;
-            }
           }
         }
 
         &:last-child {
           > td:last-child {
-
             &:before,
             > .table-cell {
               border-bottom-width: 1px;
@@ -133,29 +160,41 @@
           margin-top: 40px;
         }
 
-        > td {
+        &:nth-child(odd) {
+          > td {
+            &:before {
+              border-color: lighten($th-border-color-tb, 3%);
+            }
+          }
+        }
 
+        &:nth-child(even) {
+          > td {
+            &:before {
+              border-color: $th-border-color-tb;
+            }
+          }
+        }
+
+        > td {
           &:before,
           > .table-cell {
             display: block;
             width: auto;
           }
 
+          &:before {
+            border-bottom-width: 1px;
+          }
+
           > .table-cell {
+            border-width: 0 1px;
             text-align: left;
           }
 
           &:last-child {
             > .table-cell {
               border-bottom-width: 1px;
-            }
-          }
-        }
-
-        &:last-child {
-          > td:last-child {
-            &:before {
-              border-bottom-width: 0;
             }
           }
         }

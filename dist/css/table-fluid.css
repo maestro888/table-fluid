@@ -1,5 +1,5 @@
 /**
- * Responsive Table v1.1.0 (https://github.com/maestro888/table-fluid)
+ * Responsive Table v1.1.1 (https://github.com/maestro888/table-fluid)
  * Copyright (c) 2021 maestro888
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  */
@@ -30,9 +30,17 @@
   color: #ffffff;
 }
 
+.table-fluid > * > tr > th:first-child {
+  border-left-color: #39966c;
+}
+
+.table-fluid > * > tr > th:last-child {
+  border-right-color: #39966c;
+}
+
 .table-fluid > * > tr > td {
   font-weight: inherit;
-  border-color: #e5e5e5 #e5e5e5;
+  border-color: transparent #e5e5e5;
   padding: 15px 15px;
   color: inherit;
 }
@@ -53,11 +61,37 @@
   .table-fluid > thead {
     display: none;
   }
+  .table-fluid > * > tr:nth-child(odd) > td {
+    background-color: transparent;
+  }
+  .table-fluid > * > tr:nth-child(odd) > td:before {
+    border-color: #338761 #39966c;
+    background-color: #39966c;
+  }
+  .table-fluid > * > tr:nth-child(odd) > td > .table-cell {
+    background-color: #f7f7f7;
+  }
+  .table-fluid > * > tr:nth-child(even) > td:before {
+    border-color: #379269 #3da174;
+    background-color: #3da174;
+  }
   .table-fluid > * > tr > td {
     display: table;
     width: 100%;
     border: 0 none;
     padding: 0;
+  }
+  .table-fluid > * > tr > td:first-child:before {
+    border-top-color: #39966c;
+  }
+  .table-fluid > * > tr > td:first-child > .table-cell {
+    border-top-color: #e5e5e5;
+  }
+  .table-fluid > * > tr > td:last-child:before {
+    border-bottom-color: #39966c;
+  }
+  .table-fluid > * > tr > td:last-child > .table-cell {
+    border-bottom-color: #e5e5e5;
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
@@ -74,22 +108,8 @@
     width: 50%;
   }
   .table-fluid > * > tr > td > .table-cell {
-    border-color: #e5e5e5 #e5e5e5;
+    border-color: transparent #e5e5e5;
     text-align: center;
-  }
-  .table-fluid > * > tr:nth-child(odd) > td {
-    background-color: transparent;
-  }
-  .table-fluid > * > tr:nth-child(odd) > td:before {
-    border-color: #379269 #3da174;
-    background-color: #3da174;
-  }
-  .table-fluid > * > tr:nth-child(odd) > td > .table-cell {
-    background-color: #f7f7f7;
-  }
-  .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: #338761 #39966c;
-    background-color: #39966c;
   }
   .table-fluid > * > tr:last-child > td:last-child:before,
   .table-fluid > * > tr:last-child > td:last-child > .table-cell {
@@ -104,19 +124,26 @@
   .table-fluid > * > tr + tr {
     margin-top: 40px;
   }
+  .table-fluid > * > tr:nth-child(odd) > td:before {
+    border-color: #3da174;
+  }
+  .table-fluid > * > tr:nth-child(even) > td:before {
+    border-color: #39966c;
+  }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
     display: block;
     width: auto;
   }
+  .table-fluid > * > tr > td:before {
+    border-bottom-width: 1px;
+  }
   .table-fluid > * > tr > td > .table-cell {
+    border-width: 0 1px;
     text-align: left;
   }
   .table-fluid > * > tr > td:last-child > .table-cell {
     border-bottom-width: 1px;
-  }
-  .table-fluid > * > tr:last-child > td:last-child:before {
-    border-bottom-width: 0;
   }
 }
 

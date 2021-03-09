@@ -15,7 +15,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.1.0.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.1.1.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
