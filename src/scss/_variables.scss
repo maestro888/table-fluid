@@ -9,7 +9,7 @@ $table-font-size: inherit !default;
 // Table Head styles.
 $th-font-weight: bold !default;
 $th-bg-color: #39966c !default;
-$th-border-color-tb: $th-bg-color !default;
+$th-border-color-tb: #256246 !default;
 $th-border-color-rl: #338761 !default;
 $th-color: #ffffff !default;
 $th-padding-tb: 15px !default;
@@ -18,9 +18,9 @@ $th-padding-rl: 15px !default;
 // Table Body styles.
 $td-font-weight: inherit !default;
 $td-odd-bg-color: #f7f7f7 !default;
-$td-even-bg-color: transparent !default;
-$td-border-color-tb: transparent !default;
-$td-border-color-rl: #e5e5e5 !default;
+$td-even-bg-color: #ffffff !default;
+$td-border-color-tb: #e5e5e5 !default;
+$td-border-color-rl: #b2b2b2 !default;
 $td-color: inherit !default;
 $td-padding-tb: 15px !default;
 $td-padding-rl: 15px !default;

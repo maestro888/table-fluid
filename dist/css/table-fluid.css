@@ -1,5 +1,5 @@
 /**
- * Responsive Table v1.1.1 (https://github.com/maestro888/table-fluid)
+ * Responsive Table v1.1.2 (https://github.com/maestro888/table-fluid)
  * Copyright (c) 2021 maestro888
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  */
@@ -25,22 +25,22 @@
 .table-fluid > * > tr > th {
   font-weight: bold;
   background-color: #39966c;
-  border-color: #39966c #338761;
+  border-color: #256246 #338761;
   padding: 15px 15px;
   color: #ffffff;
 }
 
 .table-fluid > * > tr > th:first-child {
-  border-left-color: #39966c;
+  border-left-color: #256246;
 }
 
 .table-fluid > * > tr > th:last-child {
-  border-right-color: #39966c;
+  border-right-color: #256246;
 }
 
 .table-fluid > * > tr > td {
   font-weight: inherit;
-  border-color: transparent #e5e5e5;
+  border-color: #e5e5e5 #b2b2b2;
   padding: 15px 15px;
   color: inherit;
 }
@@ -50,11 +50,11 @@
 }
 
 .table-fluid > * > tr:nth-child(even) > td {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .table-fluid > * > tr:last-child > td {
-  border-bottom-color: #e5e5e5;
+  border-bottom-color: #b2b2b2;
 }
 
 @media (max-width: 767px) {
@@ -65,14 +65,14 @@
     background-color: transparent;
   }
   .table-fluid > * > tr:nth-child(odd) > td:before {
-    border-color: #338761 #39966c;
+    border-color: #338761 #256246;
     background-color: #39966c;
   }
   .table-fluid > * > tr:nth-child(odd) > td > .table-cell {
     background-color: #f7f7f7;
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: #379269 #3da174;
+    border-color: #379269 #296d4e;
     background-color: #3da174;
   }
   .table-fluid > * > tr > td {
@@ -82,16 +82,16 @@
     padding: 0;
   }
   .table-fluid > * > tr > td:first-child:before {
-    border-top-color: #39966c;
+    border-top-color: #256246;
   }
   .table-fluid > * > tr > td:first-child > .table-cell {
-    border-top-color: #e5e5e5;
+    border-top-color: #b2b2b2;
   }
   .table-fluid > * > tr > td:last-child:before {
-    border-bottom-color: #39966c;
+    border-bottom-color: #256246;
   }
   .table-fluid > * > tr > td:last-child > .table-cell {
-    border-bottom-color: #e5e5e5;
+    border-bottom-color: #b2b2b2;
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
@@ -108,7 +108,7 @@
     width: 50%;
   }
   .table-fluid > * > tr > td > .table-cell {
-    border-color: transparent #e5e5e5;
+    border-color: #e5e5e5 #b2b2b2;
     text-align: center;
   }
   .table-fluid > * > tr:last-child > td:last-child:before,
@@ -125,10 +125,10 @@
     margin-top: 40px;
   }
   .table-fluid > * > tr:nth-child(odd) > td:before {
-    border-color: #3da174;
+    border-color: #296d4e;
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: #39966c;
+    border-color: #256246;
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
