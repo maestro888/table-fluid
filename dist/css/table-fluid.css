@@ -1,5 +1,5 @@
 /**
- * Responsive Table v1.1.3 (https://github.com/maestro888/table-fluid)
+ * Responsive Table v1.1.4 (https://github.com/maestro888/table-fluid)
  * Copyright (c) 2021 maestro888
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  */
@@ -125,10 +125,10 @@
     margin-top: 40px;
   }
   .table-fluid > * > tr:nth-child(odd) > td:before {
-    border-color: #296d4e;
+    border-color: #256246;
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: #256246;
+    border-color: #296d4e;
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {

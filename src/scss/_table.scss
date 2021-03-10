@@ -163,7 +163,7 @@
         &:nth-child(odd) {
           > td {
             &:before {
-              border-color: lighten($th-border-color-tb, 3%);
+              border-color: $th-border-color-tb;
             }
           }
         }
@@ -171,7 +171,7 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: $th-border-color-tb;
+              border-color: lighten($th-border-color-tb, 3%);
             }
           }
         }
