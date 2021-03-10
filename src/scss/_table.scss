@@ -1,10 +1,10 @@
 .table-fluid {
-  /* Default table styles. */
+  /* Default table style variables. */
   --table-font-family: #{$table-font-family};
   --table-font-size: #{$table-font-size};
   --table-row-gap-mobile: #{$table-row-gap-mobile};
 
-  /* Table Head styles. */
+  /* Table Head style variables. */
   --th-font-weight: #{$th-font-weight};
   --th-bg-color: #{$th-bg-color};
   --th-border-color-tb: #{$th-border-color-tb};
@@ -12,11 +12,12 @@
   --th-color: #{$th-color};
   --th-padding-tb: #{$th-padding-tb};
   --th-padding-rl: #{$th-padding-rl};
-  --th-bg-color-lighten: #{lighten($th-bg-color, 3%)};
-  --th-border-color-tb-lighten: #{lighten($th-border-color-tb, 3%)};
-  --th-border-color-rl-lighten: #{lighten($th-border-color-rl, 3%)};
+  /* Style variables for tablet and mobile only. */
+  --th-bg-color-even: #{lighten($th-bg-color, 3%)};
+  --th-border-color-tb-even: #{lighten($th-border-color-tb, 3%)};
+  --th-border-color-rl-even: #{lighten($th-border-color-rl, 3%)};
 
-  /* Table Body styles. */
+  /* Table Body style variables. */
   --td-font-weight: #{$td-font-weight};
   --td-odd-bg-color: #{$td-odd-bg-color};
   --td-even-bg-color: #{$td-even-bg-color};
@@ -25,7 +26,9 @@
   --td-color: #{$td-color};
   --td-padding-tb: #{$td-padding-tb};
   --td-padding-rl: #{$td-padding-rl};
+}
 
+.table-fluid {
   font-family: var(--table-font-family);
   font-size: var(--table-font-size);
   border-collapse: collapse;
@@ -112,8 +115,8 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: var(--th-border-color-rl-lighten) var(--th-border-color-tb-lighten);
-              background-color: var(--th-bg-color-lighten);
+              border-color: var(--th-border-color-rl-even) var(--th-border-color-tb-even);
+              background-color: var(--th-bg-color-even);
             }
           }
         }
@@ -198,7 +201,7 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: var(--th-border-color-tb-lighten);
+              border-color: var(--th-border-color-tb-even);
             }
           }
         }

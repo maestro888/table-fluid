@@ -4,11 +4,11 @@
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  */
 .table-fluid {
-  /* Default table styles. */
+  /* Default table style variables. */
   --table-font-family: inherit;
   --table-font-size: inherit;
   --table-row-gap-mobile: 40px;
-  /* Table Head styles. */
+  /* Table Head style variables. */
   --th-font-weight: bold;
   --th-bg-color: #39966c;
   --th-border-color-tb: #256246;
@@ -16,10 +16,11 @@
   --th-color: #ffffff;
   --th-padding-tb: 15px;
   --th-padding-rl: 15px;
-  --th-bg-color-lighten: #3da174;
-  --th-border-color-tb-lighten: #296d4e;
-  --th-border-color-rl-lighten: #379269;
-  /* Table Body styles. */
+  /* Style variables for tablet and mobile only. */
+  --th-bg-color-even: #3da174;
+  --th-border-color-tb-even: #296d4e;
+  --th-border-color-rl-even: #379269;
+  /* Table Body style variables. */
   --td-font-weight: inherit;
   --td-odd-bg-color: #f7f7f7;
   --td-even-bg-color: #ffffff;
@@ -28,6 +29,9 @@
   --td-color: inherit;
   --td-padding-tb: 15px;
   --td-padding-rl: 15px;
+}
+
+.table-fluid {
   font-family: var(--table-font-family);
   font-size: var(--table-font-size);
   border-collapse: collapse;
@@ -96,8 +100,8 @@
     background-color: var(--td-odd-bg-color);
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: var(--th-border-color-rl-lighten) var(--th-border-color-tb-lighten);
-    background-color: var(--th-bg-color-lighten);
+    border-color: var(--th-border-color-rl-even) var(--th-border-color-tb-even);
+    background-color: var(--th-bg-color-even);
   }
   .table-fluid > * > tr > td {
     display: table;
@@ -152,7 +156,7 @@
     border-color: var(--th-border-color-tb);
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: var(--th-border-color-tb-lighten);
+    border-color: var(--th-border-color-tb-even);
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
