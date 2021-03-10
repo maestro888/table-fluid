@@ -157,7 +157,7 @@
         display: block;
 
         + tr {
-          margin-top: 40px;
+          margin-top: $table-row-gap-mobile;
         }
 
         &:nth-child(odd) {
