@@ -15,7 +15,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.4.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.0.5.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
@@ -124,7 +124,7 @@ table-fluid/
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/maestro888/table-fluid/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/maestro888/table-fluid/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/maestro888/table-fluid/issues/new).
 
 
 ## Versioning
