@@ -28,7 +28,6 @@
   --td-color: inherit;
   --td-padding-tb: 15px;
   --td-padding-rl: 15px;
-  /* END Variables */
   font-family: var(--table-font-family);
   font-size: var(--table-font-size);
   border-collapse: collapse;
