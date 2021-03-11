@@ -1,6 +1,36 @@
 .table-fluid {
-  font-family: $table-font-family;
-  font-size: $table-font-size;
+  /* Default table style variables. */
+  --table-font-family: #{$table-font-family};
+  --table-font-size: #{$table-font-size};
+  --table-row-gap-mobile: #{$table-row-gap-mobile};
+
+  /* Table Head style variables. */
+  --th-font-weight: #{$th-font-weight};
+  --th-bg-color: #{$th-bg-color};
+  --th-border-color-tb: #{$th-border-color-tb};
+  --th-border-color-rl: #{$th-border-color-rl};
+  --th-color: #{$th-color};
+  --th-padding-tb: #{$th-padding-tb};
+  --th-padding-rl: #{$th-padding-rl};
+  /* Style variables for tablet and mobile only. */
+  --th-bg-color-even: #{lighten($th-bg-color, 3%)};
+  --th-border-color-tb-even: #{lighten($th-border-color-tb, 3%)};
+  --th-border-color-rl-even: #{lighten($th-border-color-rl, 3%)};
+
+  /* Table Body style variables. */
+  --td-font-weight: #{$td-font-weight};
+  --td-odd-bg-color: #{$td-odd-bg-color};
+  --td-even-bg-color: #{$td-even-bg-color};
+  --td-border-color-tb: #{$td-border-color-tb};
+  --td-border-color-rl: #{$td-border-color-rl};
+  --td-color: #{$td-color};
+  --td-padding-tb: #{$td-padding-tb};
+  --td-padding-rl: #{$td-padding-rl};
+}
+
+.table-fluid {
+  font-family: var(--table-font-family);
+  font-size: var(--table-font-size);
   border-collapse: collapse;
   width: 100%;
 
@@ -18,43 +48,43 @@
       }
 
       > th {
-        font-weight: $th-font-weight;
-        background-color: $th-bg-color;
-        border-color: $th-border-color-tb $th-border-color-rl;
-        padding: $th-padding-tb $th-padding-rl;
-        color: $th-color;
+        font-weight: var(--th-font-weight);
+        background-color: var(--th-bg-color);
+        border-color: var(--th-border-color-tb) var(--th-border-color-rl);
+        padding: var(--th-padding-tb) var(--th-padding-rl);
+        color: var(--th-color);
 
         &:first-child {
-          border-left-color: $th-border-color-tb;
+          border-left-color: var(--th-border-color-tb);
         }
 
         &:last-child {
-          border-right-color: $th-border-color-tb;
+          border-right-color: var(--th-border-color-tb);
         }
       }
 
       > td {
-        font-weight: $td-font-weight;
-        border-color: $td-border-color-tb $td-border-color-rl;
-        padding: $td-padding-tb $td-padding-rl;
-        color: $td-color;
+        font-weight: var(--td-font-weight);
+        border-color: var(--td-border-color-tb) var(--td-border-color-rl);
+        padding: var(--td-padding-tb) var(--td-padding-rl);
+        color: var(--td-color);
       }
 
       &:nth-child(odd) {
         > td {
-          background-color: $td-odd-bg-color;
+          background-color: var(--td-odd-bg-color);
         }
       }
 
       &:nth-child(even) {
         > td {
-          background-color: $td-even-bg-color;
+          background-color: var(--td-even-bg-color);
         }
       }
 
       &:last-child {
         > td {
-          border-bottom-color: $td-border-color-rl;
+          border-bottom-color: var(--td-border-color-rl);
         }
       }
     }
@@ -72,12 +102,12 @@
             background-color: transparent;
 
             &:before {
-              border-color: $th-border-color-rl $th-border-color-tb;
-              background-color: $th-bg-color;
+              border-color: var(--th-border-color-rl) var(--th-border-color-tb);
+              background-color: var(--th-bg-color);
             }
 
             > .table-cell {
-              background-color: $td-odd-bg-color;
+              background-color: var(--td-odd-bg-color);
             }
           }
         }
@@ -85,8 +115,8 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: lighten($th-border-color-rl, 3%) lighten($th-border-color-tb, 3%);
-              background-color: lighten($th-bg-color, 3%);
+              border-color: var(--th-border-color-rl-even) var(--th-border-color-tb-even);
+              background-color: var(--th-bg-color-even);
             }
           }
         }
@@ -99,21 +129,21 @@
 
           &:first-child {
             &:before {
-              border-top-color: $th-border-color-tb;
+              border-top-color: var(--th-border-color-tb);
             }
 
             > .table-cell {
-              border-top-color: $td-border-color-rl;
+              border-top-color: var(--td-border-color-rl);
             }
           }
 
           &:last-child {
             &:before {
-              border-bottom-color: $th-border-color-tb;
+              border-bottom-color: var(--th-border-color-tb);
             }
 
             > .table-cell {
-              border-bottom-color: $td-border-color-rl;
+              border-bottom-color: var(--td-border-color-rl);
             }
           }
 
@@ -122,19 +152,19 @@
             border-width: 1px 1px 0;
             border-style: solid;
             display: table-cell;
-            padding: $td-padding-tb $td-padding-rl;
+            padding: var(--td-padding-tb) var(--td-padding-rl);
           }
 
           &:before {
-            font-weight: $th-font-weight;
+            font-weight: var(--th-font-weight);
             content: attr(data-th);
-            color: $th-color;
+            color: var(--th-color);
             text-align: left;
             width: 50%;
           }
 
           > .table-cell {
-            border-color: $td-border-color-tb $td-border-color-rl;
+            border-color: var(--td-border-color-tb) var(--td-border-color-rl);
             text-align: center;
           }
         }
@@ -157,13 +187,13 @@
         display: block;
 
         + tr {
-          margin-top: $table-row-gap-mobile;
+          margin-top: var(--table-row-gap-mobile);
         }
 
         &:nth-child(odd) {
           > td {
             &:before {
-              border-color: $th-border-color-tb;
+              border-color: var(--th-border-color-tb);
             }
           }
         }
@@ -171,7 +201,7 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: lighten($th-border-color-tb, 3%);
+              border-color: var(--th-border-color-tb-even);
             }
           }
         }
