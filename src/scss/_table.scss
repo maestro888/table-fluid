@@ -13,9 +13,9 @@
   --th-padding-tb: #{$th-padding-tb};
   --th-padding-rl: #{$th-padding-rl};
   /* Style variables for tablet and mobile only. */
-  --th-bg-color-even: #{lighten($th-bg-color, 3%)};
-  --th-border-color-tb-even: #{lighten($th-border-color-tb, 3%)};
-  --th-border-color-rl-even: #{lighten($th-border-color-rl, 3%)};
+  --th-even-bg-color: #{lighten($th-bg-color, 3%)};
+  --th-even-border-color-tb: #{lighten($th-border-color-tb, 3%)};
+  --th-even-border-color-rl: #{lighten($th-border-color-rl, 3%)};
 
   /* Table Body style variables. */
   --td-font-weight: #{$td-font-weight};
@@ -115,8 +115,8 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: var(--th-border-color-rl-even) var(--th-border-color-tb-even);
-              background-color: var(--th-bg-color-even);
+              border-color: var(--th-even-border-color-rl) var(--th-even-border-color-tb);
+              background-color: var(--th-even-bg-color);
             }
           }
         }
@@ -201,7 +201,7 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: var(--th-border-color-tb-even);
+              border-color: var(--th-even-border-color-tb);
             }
           }
         }

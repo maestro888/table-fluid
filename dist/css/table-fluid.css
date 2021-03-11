@@ -1,5 +1,5 @@
 /**
- * Responsive Table v1.2.0 (https://github.com/maestro888/table-fluid)
+ * Responsive Table v1.2.1 (https://github.com/maestro888/table-fluid)
  * Copyright (c) 2021 maestro888
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  */
@@ -17,9 +17,9 @@
   --th-padding-tb: 15px;
   --th-padding-rl: 15px;
   /* Style variables for tablet and mobile only. */
-  --th-bg-color-even: #3da174;
-  --th-border-color-tb-even: #296d4e;
-  --th-border-color-rl-even: #379269;
+  --th-even-bg-color: #3da174;
+  --th-even-border-color-tb: #296d4e;
+  --th-even-border-color-rl: #379269;
   /* Table Body style variables. */
   --td-font-weight: inherit;
   --td-odd-bg-color: #f7f7f7;
@@ -100,8 +100,8 @@
     background-color: var(--td-odd-bg-color);
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: var(--th-border-color-rl-even) var(--th-border-color-tb-even);
-    background-color: var(--th-bg-color-even);
+    border-color: var(--th-even-border-color-rl) var(--th-even-border-color-tb);
+    background-color: var(--th-even-bg-color);
   }
   .table-fluid > * > tr > td {
     display: table;
@@ -156,7 +156,7 @@
     border-color: var(--th-border-color-tb);
   }
   .table-fluid > * > tr:nth-child(even) > td:before {
-    border-color: var(--th-border-color-tb-even);
+    border-color: var(--th-even-border-color-tb);
   }
   .table-fluid > * > tr > td:before,
   .table-fluid > * > tr > td > .table-cell {
