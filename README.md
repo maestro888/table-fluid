@@ -126,6 +126,7 @@ If you only use CSS please add these styles to your created CSS file. `Note: for
 }
 ```
 
+
 ## Status
 
 [![npm version](https://img.shields.io/npm/v/table-fluid)](https://www.npmjs.com/package/table-fluid)
