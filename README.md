@@ -94,6 +94,7 @@ window.tableFluid('.table-fluid');
 ```
 
 ## Default styles examples
+
 If you only use SCSS please add these variables to the created file _variables.scss in your project
 
 ```scss
