@@ -65,7 +65,7 @@ window.tableFluid('.table-fluid');
 @import '.../node_modules/table-fluid/src/scss/table';
 ```
 
-- In the created file `_variables.scss` replace the values of the variables as you need. All variables examples are inside the file:
+- In the created file `_variables.scss` replace the values of the variables as you need (please see Default styles examples). All variables examples are inside the file:
 
 ```text
 .../node_modules/table-fluid/src/scss/_variables.scss
