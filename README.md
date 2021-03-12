@@ -4,6 +4,7 @@
 
 - [Quick start](#quick-start)
 - [Best practises](#best-practises)
+- [Default styles examples](#default-styles-examples)
 - [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -15,7 +16,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.2.1.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.2.2.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
@@ -64,7 +65,7 @@ window.tableFluid('.table-fluid');
 @import '.../node_modules/table-fluid/src/scss/table';
 ```
 
-- In the created file `_variables.scss` replace the values of the variables as you need. All variables examples are inside the file:
+- In the created file `_variables.scss` replace the values of the variables as you need (please see Default styles examples). All variables examples are inside the file:
 
 ```text
 .../node_modules/table-fluid/src/scss/_variables.scss
@@ -90,6 +91,40 @@ window.tableFluid('.table-fluid');
 
 ```js
 window.tableFluid('.table-fluid');
+```
+
+## Default styles examples
+
+If you only use SCSS please add these variables to the created file _variables.scss in your project
+
+```scss
+// Table Head styles.
+$th-bg-color: #a9a9a9;
+$th-border-color-tb: #808080;
+$th-border-color-rl: #808080;
+
+// Table Body styles.
+$td-border-color-tb: $th-bg-color;
+$td-border-color-rl: $th-bg-color;
+```
+
+If you only use CSS please add these styles to your created CSS file. `Note: for the latest version plugin`
+
+```css
+.table-fluid {
+  /* Table Head style variables. */
+  --th-bg-color: #a9a9a9;
+  --th-border-color-tb: #808080;
+  --th-border-color-rl: #808080;
+  /* Style variables for tablet and mobile only. */
+  --th-even-bg-color: #b1b1b1;
+  --th-even-border-color-tb: #888888;
+  --th-even-border-color-rl: #888888;
+
+  /* Table Body style variables. */
+  --td-border-color-tb: var(--th-bg-color);
+  --td-border-color-rl: var(--th-bg-color);
+}
 ```
 
 
