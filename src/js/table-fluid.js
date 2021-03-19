@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Responsive Table (v1.2.2): table-fluid.js
+ * Responsive Table (v1.2.3): table-fluid.js
  * Copyright (c) 2021 maestro888
  * Licensed under MIT (https://github.com/maestro888/table-fluid/blob/master/LICENSE)
  * --------------------------------------------------------------------------
