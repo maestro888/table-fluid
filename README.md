@@ -99,6 +99,8 @@ window.tableFluid('.table-fluid');
 
 ## Default styles example
 
+Please add these variables to the created file `_variables.scss` in your project
+
 ```scss
 // Table Head styles.
 $th-bg-color: #a9a9a9;
