@@ -13,9 +13,9 @@
   --th-padding-tb: #{$th-padding-tb};
   --th-padding-rl: #{$th-padding-rl};
   /* Style variables for tablet and mobile only. */
-  --th-even-bg-color: #{lighten($th-bg-color, 3%)};
-  --th-even-border-color-tb: #{lighten($th-border-color-tb, 3%)};
-  --th-even-border-color-rl: #{lighten($th-border-color-rl, 3%)};
+  --th-even-bg-color: #{$th-even-bg-color};
+  --th-even-border-color-tb: #{$th-even-border-color-tb};
+  --th-even-border-color-rl: #{$th-even-border-color-rl};
 
   /* Table Body style variables. */
   --td-font-weight: #{$td-font-weight};

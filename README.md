@@ -1,4 +1,6 @@
-<h3 align="center">Responsive Tables JavaScript Plugin</h3>
+<h1 align="center">Responsive Tables JavaScript Plugin</h1>
+
+![table-fluid_v1 2](https://user-images.githubusercontent.com/24480687/111766347-1d2b5c00-88ae-11eb-86b2-9b129f963273.gif)
 
 ## Table of contents
 
@@ -16,7 +18,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.2.2.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.2.3.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
