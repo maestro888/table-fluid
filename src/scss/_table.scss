@@ -85,8 +85,8 @@
         &:nth-child(even) {
           > td {
             &:before {
-              border-color: lighten($th-border-color-rl, 3%) lighten($th-border-color-tb, 3%);
-              background-color: lighten($th-bg-color, 3%);
+              border-color: $th-even-border-color-rl $th-even-border-color-tb;
+              background-color: $th-even-bg-color;
             }
           }
         }

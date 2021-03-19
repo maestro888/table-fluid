@@ -1,9 +1,13 @@
-<h3 align="center">Responsive Tables JavaScript Plugin</h3>
+<h1 align="center">Responsive Tables JavaScript Plugin</h1>
+
+![table-fluid_v1 2](https://user-images.githubusercontent.com/24480687/111766347-1d2b5c00-88ae-11eb-86b2-9b129f963273.gif)
+
 
 ## Table of contents
 
 - [Quick start](#quick-start)
 - [Best practises](#best-practises)
+- [Default styles example](#default-styles-example)
 - [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -15,7 +19,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.1.5.zip)
+- [Download the latest release.](https://github.com/maestro888/table-fluid/archive/1.1.6.zip)
 - Clone the repo: `git clone https://github.com/maestro888/table-fluid.git`
 - Install with [npm](https://www.npmjs.com/): `npm install table-fluid`
 
@@ -90,6 +94,20 @@ window.tableFluid('.table-fluid');
 
 ```js
 window.tableFluid('.table-fluid');
+```
+
+
+## Default styles example
+
+```scss
+// Table Head styles.
+$th-bg-color: #a9a9a9;
+$th-border-color-tb: #808080;
+$th-border-color-rl: #808080;
+
+// Table Body styles.
+$td-border-color-tb: $th-bg-color;
+$td-border-color-rl: $th-bg-color;
 ```
 
 

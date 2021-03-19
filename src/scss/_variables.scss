@@ -15,6 +15,10 @@ $th-border-color-rl: #338761 !default;
 $th-color: #ffffff !default;
 $th-padding-tb: 15px !default;
 $th-padding-rl: 15px !default;
+// Style variables for tablet and mobile only.
+$th-even-bg-color: lighten($th-bg-color, 3%) !default;
+$th-even-border-color-tb: lighten($th-border-color-tb, 3%) !default;
+$th-even-border-color-rl: lighten($th-border-color-rl, 3%) !default;
 
 // Table Body styles.
 $td-font-weight: inherit !default;
