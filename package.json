@@ -1,6 +1,6 @@
 {
   "name": "table-fluid",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "version_short": "1.2",
   "style": "dist/css/table-fluid.css",
   "sass": "src/scss/table-fluid.scss",
